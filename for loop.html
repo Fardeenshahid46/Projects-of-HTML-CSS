@@ -1,0 +1,61 @@
+<script>
+    // for(let i=0; i<=10; i++)
+    // {
+    //     console.log(i);
+    // }
+    // for(let i=23; i>15; i++)
+    // {
+    //     console.log(i);
+    // }
+    // for(let i=3; i<10; i++)
+    // {
+    //     console.log(i);
+    // }
+// let city=["Hyderabad","Karachi","Lahore","Kotri"]
+// city[3]="Sialkot"
+// console.log(city);
+// let prime=8;
+// let isPrime=true;
+// for(let i=2;i<prime;i++)
+// {
+//     if(prime%i==0)
+//     {
+//       isPrime=false;//Flag
+//     }
+// }
+// if(isPrime)
+// {
+//     console.log(`${prime} is a prime number`);
+// }
+// else
+// {
+// console.log(`${prime} is not a prime number`);
+// }
+// for(let i=1;i<5;i++)
+// {
+//     for(let j=i;j<5;j++)
+//    {
+//     console.log(i);
+//    } 
+// }
+
+    for (let num = 2; num <= 50; num++) {
+        let isPrime = true;
+
+        for (let i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i === 0) {
+                isPrime = false;
+                break;
+            }
+        }
+
+        if (isPrime) {
+            console.log(`${num} is a prime number`);
+        }
+        else{
+            console.log(`${num} is not a prime number`);
+        }
+    }
+
+
+</script>

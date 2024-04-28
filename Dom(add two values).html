@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="t1">
+    <input type="text" id="t2">
+    <input type="text" name="" id="t3">
+    <input type="button" value="+" onclick="shwValue()"><br><br>
+    <input type="text" id="t4">
+    <input type="text" id="t5">
+    <input type="text" id="t6">
+    <input type="button" value="-" onclick="conValue()"><br><br>
+    <input type="text" id="t7">
+    <input type="text" id="t8">
+    <input type="text" id="t9">
+    <input type="button" value="*" onclick="joyValue()"><br><br>
+    <input type="text" id="t10">
+    <input type="text" id="t11">
+    <input type="text" id="t12">
+    <input type="button" value="/" onclick="loiValue()">
+    <script>
+        function shwValue()
+        {
+            let val1=Number(document.getElementById('t1').value);
+            let val2=Number(document.getElementById('t2').value);
+            document.getElementById('t3').value=val1+val2;
+        }
+        function conValue()
+        {
+            let val3=Number(document.getElementById('t4').value);
+            let val4=Number(document.getElementById('t5').value);
+            document.getElementById('t6').value=val3-val4;
+        }
+        function joyValue() {
+        let val4=Number(document.getElementById('t7').value);
+        let val5=Number(document.getElementById('t8').value);
+        document.getElementById('t9').value=val4*val5;    
+        }
+        function loiValue()
+        {
+            let val6=Number(document.getElementById('t10').value);
+            let val7=Number(document.getElementById('t11').value);
+            document.getElementById('t12').value=val6/val7;
+        }
+    </script>
+</body>
+</html>

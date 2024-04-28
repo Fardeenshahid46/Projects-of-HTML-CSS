@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        border: 2px solid red; width: 10%; height: 10vh;
+    }
+    #d2{
+        border: 2px solid green; width: 10%; height:10vh;
+        margin-bottom: 20px;
+
+    }
+    
+
+</style>
+<body>
+    <input type="text" id="t1">
+    <input type="text" id="t2">
+    <input type="text" id="t3">
+    <input type="button" value="down" onclick="donw()">
+    <div id="d1"></div>
+    <!-- <form action="DayandTime.html" onsubmit="return validate()"></form>
+    <input type="submit"> --> <br><br><br><br><br><br><br><br><br>
+    <!-- <input type="text" name="" id="t4">
+    <input type="text" name="" id="t5">
+    <input type="text" name="" id="t6">
+    <input type="button" value="up" onclick="up()" >
+    <div id="d2"></div> -->
+    
+<script>
+    let t1=document.getElementById('t1');
+    let t2=document.getElementById('t2');
+    let d1=document.getElementById('d1');
+    let dow=0;
+    function donw()
+    {
+    dow=dow+10; 
+    d1.style=`margin-top:${dow}px`
+    }
+    // let t4=document.getElementById('t4');
+    // let t5=document.getElementById('t5');
+    // let d2=document.getElementById('d2');
+    // let up=0;
+    // function up() {
+    //     up=up+(-20)
+    //     d2.style=`margin-bottom:${up}px`
+    // }
+    
+
+    
+</script>
+</body>
+</html>

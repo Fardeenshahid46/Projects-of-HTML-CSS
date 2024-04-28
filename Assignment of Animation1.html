@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#k1{
+    height: 10px;
+    transition:right 2s linear ;
+    animation-name:Car ;
+    position: absolute;
+    animation-iteration-count:infinite ;
+    animation-duration:2s ;
+}
+    @keyframes Car {
+        from{
+            transition:right 2s linear ;
+        }
+        to{
+            transform: rotateX(360deg);
+        }
+        
+    }
+
+
+#m2{
+    float: right;
+    transition: left 2s linear ;
+    animation-iteration-count:infinite ;
+    animation-name:Car1 ;
+    animation-duration:2s ;
+
+}
+@keyframes Car1{
+    from{
+        transition:left 2s linear
+    }
+}
+
+</style>
+<body>
+    <div id="k1">
+        <img src="Small Car.png" alt="" width="120px">
+    </div>
+    <div id="m2">
+        <img src="Large Car.png" alt="" width="140px">
+    </div>
+    
+</body>
+</html>
